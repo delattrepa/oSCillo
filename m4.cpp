@@ -133,6 +133,11 @@ int main(int argc, char** argv)
   float rouge_scale, vert_scale, bleu_scale;
   float jaune_scale, cyan_scale, magenta_scale;
   
+  string port_serie;
+  int vitesse_serie;
+  param_file >> port_serie;
+  param_file >> vitesse_serie;
+  
   string mot;
   param_file >> mot;
   param_file >> mot;
@@ -163,20 +168,23 @@ int main(int argc, char** argv)
   param_file >> magenta_scale;
   
   param_file.close ();
-
   
   // serial stream
-  string port_serie = "/dev/ttyACM0";
   SerialStream my_serial_stream;
   my_serial_stream.Open(port_serie.c_str());
-  my_serial_stream.SetBaudRate(SerialStreamBuf::BAUD_115200); // BAUD_115200 BAUD_9600
+  if (vitesse_serie == 115200) {
+  my_serial_stream.SetBaudRate(SerialStreamBuf::BAUD_115200); // BAUD_115200
+  }
+  else {
+    my_serial_stream.SetBaudRate(SerialStreamBuf::BAUD_9600); // default : BAUD_9600
+  }
   my_serial_stream.SetCharSize(SerialStreamBuf::CHAR_SIZE_8);
   my_serial_stream.SetNumOfStopBits(2);
   my_serial_stream.SetParity(SerialStreamBuf::PARITY_NONE);
   my_serial_stream.SetFlowControl(SerialStreamBuf::FLOW_CONTROL_NONE);
   
   cout << "port : " << port_serie << endl;
-//  cout << "vitesse :" << 9600 << endl;
+  cout << "vitesse :" << vitesse_serie << endl;
   
   // oscilloscope
   
