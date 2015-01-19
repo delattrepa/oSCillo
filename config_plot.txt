@@ -1,0 +1,58 @@
+couleur col echelle
+rouge 1 0.5
+vert 12 1
+bleu 1 0
+jaune 1 0
+cyan 1 0
+magenta 1 0
+
+
+acc 
+
+couleur col echelle
+rouge 2 0.007
+vert 3 0.007
+bleu 4 0.007
+jaune 1 0
+cyan 1 0
+magenta 1 0
+
+
+magneto 
+
+couleur col echelle
+rouge 5 0.02
+vert 6 0.02
+bleu 7 0.02
+jaune 1 0
+cyan 1 0
+magenta 1 0
+
+
+gyro 
+
+couleur col echelle
+rouge 8 0.007
+vert 9 0.007
+bleu 10 0.007
+jaune 1 0
+cyan 1 0
+magenta 1 0
+
+
+heading et alti 
+
+couleur col echelle
+rouge 1 0.5
+vert 12 1
+bleu 1 0
+jaune 1 0
+cyan 1 0
+magenta 1 0
+
+
+
+
+
+
+
