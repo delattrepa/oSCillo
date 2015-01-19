@@ -8,4 +8,5 @@
 * oSCillo take a text config file to select whitch column to plot and the scale
 * oSCillo can plot 6 lines in real time from serial input
 * oSCillo est écrit par un français
-* oSCillo is developped in order to follow linear and angular acceleration and north direction 
+* oSCillo is developped in order to follow linear and angular acceleration and north direction
+* oSCillo have a wiki and screenshot
