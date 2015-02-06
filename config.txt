@@ -1,12 +1,12 @@
 /dev/ttyACM0
 115200
 couleur col echelle
-rouge 2 0.007
-vert 3 0.007
-bleu 4 0.007
-jaune 1 0
-cyan 1 0
-magenta 1 0
+rouge 2 0.007 acc_x
+vert 3 0.007 acc_y
+bleu 4 0.007 acc_z
+jaune 1 0 -
+cyan 1 0 -
+magenta 1 0 -
 
 
 
@@ -35,12 +35,12 @@ magenta 1 0
 gyro 
 
 couleur col echelle
-rouge 8 0.007
-vert 9 0.007
-bleu 10 0.007
-jaune 1 0
-cyan 1 0
-magenta 1 0
+rouge 8 0.0078125 gyro_x
+vert 9 0.0078125 gyro_y
+bleu 10 0.0078125 gyro_z
+jaune 1 0 rien
+cyan 1 0 rien
+magenta 1 0 rien
 
 
 heading et alti 
